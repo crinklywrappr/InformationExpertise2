@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent"> 
+
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style field="IekyStyle">
+    .anchorWrapper a {
+    	display: block;
+    }
+    
+    @sprite .left {
+    	gwt-image: 'left';
+    }
+    
+    @sprite .logo {
+    	gwt-image: 'logo';
+    	background-position: 0 -197px;
+    	height: 197px;
+    }
+    
+    @sprite .slogans {
+    	gwt-image: 'animatedSloganArea';
+    }
+    
+    @sprite .menuTop {
+    	gwt-image: 'menuTop';
+    }
+    
+    @sprite .right {
+    	gwt-image: 'right';
+    }
+    
+    @sprite .home {
+    	gwt-image: 'home';
+    	height: 25px;
+    }
+    
+    div.home:hover {
+    	background-position: 0 -25px;
+    }
+    
+    @sprite .services {
+    	gwt-image: 'services';
+    	height: 25px;
+    }
+    
+    div.services:hover {
+    	background-position: 0 -25px;
+    }
+    
+    @sprite .about {
+    	gwt-image: 'about';
+    	height: 25px;
+    }
+    
+    div.about:hover {
+    	background-position: 0 -25px;
+    }
+    
+    @sprite .contact {
+    	gwt-image: 'contact';
+    	height: 25px;
+    }
+    
+    div.contact:hover {
+    	background-position: 0 -25px;
+    }
+    
+    @sprite .menuBottom {
+    	gwt-image: 'menuBottom';
+    }
+    
+    @sprite .floatingBar {
+    	gwt-image: 'floatingBarArea';
+    }
+    
+    @sprite .bottom {
+    	gwt-image: 'bottom';
+    }
+  </ui:style>
+  
+  <ui:image field="about" resource="about.png" />
+  <ui:image field="animatedSloganArea" resource="animatedSloganArea.png" />
+  <ui:image field="bottom" resource="bottom.png" />
+  <ui:image field="contact" resource="contact.png" />
+  <ui:image field="floatingBarArea" resource="floatingBarArea.png" />
+  <ui:image field="home" resource="home.png" />
+  <ui:image field="left" resource="left.png" />
+  <ui:image field="logo" resource="logo.png" />
+  <ui:image field="menuBottom" resource="menuBottom.png" />
+  <ui:image field="menuTop" resource="menuTop.png" />
+  <ui:image field="right" resource="right.png" />
+  <ui:image field="services" resource="services.png" />
+
+  <g:HTMLPanel>
+    <div class="{IekyStyle.anchorWrapper}">
+      <table border="0" cellspacing="0.0" cellpadding="0">
+        <tr>
+          <td rowspan="6"><div class="{IekyStyle.left}" /></td>
+          <td rowspan="6"><a href="#home"><div class="{IekyStyle.logo}" /></a></td>
+          <td colspan="5"><div class="{IekyStyle.slogans}"><div id="slogans_area" /></div></td>
+        </tr>
+        <tr>
+          <td colspan="4"><div class="{IekyStyle.menuTop}"></div></td>
+          <td rowspan="5"><div class="{IekyStyle.right}"></div></td>
+        </tr>
+        <tr>
+          <td><a href="#home"><div class="{IekyStyle.home}" /></a></td>
+          <td><a href="#business_services"><div class="{IekyStyle.services}" /></a></td>
+          <td><a href="#about"><div class="{IekyStyle.about}" /></a></td>
+          <td><a href="#contact"><div class="{IekyStyle.contact}" /></a></td>
+        </tr>
+        <tr>
+          <td colspan="4"><div class="{IekyStyle.menuBottom}"></div></td>
+        </tr>
+        <tr>
+          <td colspan="4"><div class="{IekyStyle.floatingBar}"></div></td>
+        </tr>
+        <tr>
+          <td colspan="4"><div class="{IekyStyle.bottom}"></div></td>
+        </tr>
+      </table>
+    </div>
+  </g:HTMLPanel>
+	
+</ui:UiBinder>
